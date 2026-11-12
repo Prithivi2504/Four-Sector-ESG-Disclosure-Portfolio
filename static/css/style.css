@@ -14,3 +14,17 @@
 .data-table.numeric-comparison th.numeric-heading,.data-table.numeric-comparison td.numeric-cell{white-space:nowrap;overflow-wrap:normal;text-align:right;min-width:142px;font-variant-numeric:tabular-nums}
 .data-table.numeric-comparison td.numeric-cell strong{white-space:nowrap}
 .data-table.numeric-comparison td.numeric-cell small{white-space:normal;display:block;min-width:0;max-width:220px;text-align:left}
+
+
+/* Public portfolio mobile table support */
+.table-wrap,.source-table-wrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;touch-action:pan-x pan-y}
+.table-wrap>.data-table,.source-table-wrap>.data-table{min-width:920px}
+.data-table.numeric-comparison{min-width:1580px}
+.numeric-cell,.numeric-heading{white-space:nowrap;overflow-wrap:normal;font-variant-numeric:tabular-nums}
+.data-table.numeric-comparison td.numeric-cell strong{white-space:nowrap}
+@media(max-width:760px){
+.table-wrap:before,.source-table-wrap:before{content:"Swipe horizontally to view all table columns →";display:block;padding:9px 12px;background:#eef5f4;color:#4d7775;font-size:10px;font-weight:700;letter-spacing:.02em}
+.table-wrap>.data-table,.source-table-wrap>.data-table{min-width:920px}
+.table-wrap>.numeric-comparison{min-width:1580px}
+.data-table td,.data-table th{padding:12px 13px}
+}
